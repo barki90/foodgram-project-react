@@ -138,8 +138,6 @@ def recipes_list_create(request):
                 tags__slug__in=tags).distinct()
         else:
             recipes = Recipe.objects.filter(tags__slug__in=tags).distinct()
-    else:
-        recipes = Recipe.objects.filter(tags__slug__in=[])
 
     paginator = RecipesListPagination()
     result_page = paginator.paginate_queryset(recipes, request)
