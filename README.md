@@ -1,12 +1,11 @@
 # **Продуктовый помощник «Foodgram»**
 
-![example workflow](https://github.com/barki90/foodgram-project-react/actions/workflows/main.yml/badge.svg?event=push)
 
 ### **Описание проекта**
 «Продуктовый помощник»: сайт, на котором пользователи будут публиковать рецепты, добавлять чужие рецепты в избранное и подписываться на публикации других авторов. Сервис «Список покупок» позволит пользователям создавать список продуктов, которые нужно купить для приготовления выбранных блюд.
 
 ### **Технологии**
-Python, Django Rest Framework
+Python, Django
 
 ### **Запускаем проект в на Windows**
 Клонировать репозиторий с GitHub
@@ -16,7 +15,7 @@ git clone git@github.com:barki90/foodgram-project-react.git
 
 Установить виртуальное окружение venv
 ```
-python3 -m venv venv
+python -m venv venv
 ```
 
 Aктивировать виртуальное окружение venv
