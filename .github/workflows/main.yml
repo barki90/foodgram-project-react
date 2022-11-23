@@ -56,8 +56,8 @@ jobs:
         script: |
           sudo docker compose stop
           sudo docker compose rm web --force
-          sudo docker image rm boginskiy/foodgramm
-          sudo docker pull boginskiy/foodgramm:latest
+          sudo docker image rm barclays91/foodgramm
+          sudo docker pull barclays91/foodgramm:latest
           touch .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
           echo DB_NAME=${{ secrets.DB_NAME }} >> .env
