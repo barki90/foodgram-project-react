@@ -1,5 +1,4 @@
 import os
-from pathlib import Path
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -17,7 +16,7 @@ SECRET_KEY = 'django-insecure-(1otmk)3zc@9rjqvd88sx&(egh-r55ru7e=#k!!zp!*+((uku7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['84.201.174.166', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', '51.250.68.41', 'localhost']
 
 # Application definition
 

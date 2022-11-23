@@ -1,5 +1,3 @@
-from django.test import TestCase
-
 from django.urls import include, path
 from .users.views import (
     users_detail, users_me, users_list_signup, users_set_password,
