@@ -8,6 +8,7 @@ services:
       - ./.env
 
   web:
+    build: ./
     image: barclays91/foodgramm:latest
     restart: always
     volumes:
@@ -19,9 +20,13 @@ services:
       - ./.env
 
   frontend:
-    image: barclays91/frontend:v1.1
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     volumes:
-      - ./frontend/:/app/result_build/
+      - ../frontend/:/app/result_build/
+    depends_on:
+      - web
 
   nginx:
     image: nginx:1.21.3-alpine
