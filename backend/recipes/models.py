@@ -7,9 +7,9 @@ class Recipe(models.Model):
     """Модель Рецептов."""
 
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name='recipes')
+        User, on_delete=models.CASCADE, related_name='recipes', null=True, blank=True)
     name = models.CharField(max_length=200, blank=False)
-    image = models.ImageField(upload_to='recipes/images/', blank=False)
+    image = models.ImageField(upload_to='recipes/images/', null=True, blank=False)
     text = models.TextField(blank=False)
     ingredients = models.ManyToManyField(
         'IngredientRecipe', related_name='recipe')
